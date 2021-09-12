@@ -3,8 +3,8 @@
 $a = 5;
 $b = 3;
 
-if($a == $b){
+if ($a == $b) {
     echo '入力された値は等しいです';
-}else{
+} else {
     echo max($a, $b);
 }

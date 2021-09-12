@@ -10,30 +10,35 @@
 // Carクラスのインスタンスを生成
 // 引数 : 車名、車体番号、カラー
 
-Class Car{
+class Car
+{
     public $name;
     public $num;
     public $color;
 
     public function __construct($name, $num, $color)
     {
-    $this->name =  $name;
-    $this->num = $num;
-    $this->color = $color;
+        $this->name =  $name;
+        $this->num = $num;
+        $this->color = $color;
     }
-    public function getName(){
+    public function getName()
+    {
         return $this->name;
     }
-    public function getNumber(){
+    public function getNumber()
+    {
         return $this->num;
     }
-    public function getColor(){
+    public function getColor()
+    {
         return $this->color;
     }
-    public function information(){
+    public function information()
+    {
         return '車の車種' . $this->name . '､' .
-        '車体番号' . $this->num . '､' .
-        'カラー' . $this->color . 'です｡';
+            '車体番号' . $this->num . '､' .
+            'カラー' . $this->color . 'です｡';
     }
     public function setName($name)
     {
@@ -85,4 +90,3 @@ echo '<br>';
 // 車の情報表示を表示
 echo $car1->information();
 echo '<br>';
-
